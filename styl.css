@@ -76,7 +76,7 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
   gap:var(--rynna);align-items:end;
   padding-bottom:clamp(20px,2.6vw,30px);border-bottom:1px solid var(--linia)}
 .blok-ciemny .naglowek{border-bottom-color:var(--linia-ciemna)}
-.naglowek .tytul{max-width:20ch}
+.naglowek .tytul{max-width:none;text-wrap:balance}
 .naglowek .wstep{margin:0;max-width:none}
 .dwie-kolumny{display:grid;grid-template-columns:1fr 1fr;
   gap:var(--rynna);margin-top:clamp(30px,4vw,48px)}
