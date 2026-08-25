@@ -226,6 +226,8 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
   .fakty-lista div:last-child{border-bottom:0}
   .praca:nth-child(even) .praca-foto{order:0}
   .para .ph-pion{max-width:320px}
+  .hero-dol{grid-template-columns:1fr;gap:22px}
+  .hero-dol .przyciski{margin-top:0}
   .kroki{grid-template-columns:1fr}
   .kroki li{border-top-width:1px}
 }
@@ -234,6 +236,8 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
   .pasek-rzad{gap:12px}
   .pasek-rzad .tel{display:none}
   .znak{font-size:1.24rem}
+  .znak img{width:46px;height:46px}
+  .przyciski .btn{flex:1;text-align:center}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
