@@ -81,6 +81,10 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
 .dwie-kolumny{display:grid;grid-template-columns:1fr 1fr;
   gap:var(--rynna);margin-top:clamp(30px,4vw,48px)}
 .dwie-kolumny p{margin:14px 0 0;color:var(--atrament-jasny);font-size:.97rem}
+.dwie-kolumny>div>p:first-child{margin-top:0}
+.portret{margin:0}
+.portret img{width:100%;max-width:400px;height:auto;aspect-ratio:4/5;object-fit:cover;
+  object-position:center 22%;border-radius:3px;display:block}
 .blok-ciemny .wstep{color:#a29eae}
 .blok-ciemny p{color:#b5b1bf}
 
@@ -221,6 +225,7 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
     color:var(--papier)!important;font-weight:600;text-align:center;border-radius:2px;
     padding:14px 0!important}
   .praca,.para,.dwie-listy,.dwie-kolumny{grid-template-columns:1fr}
+  .portret img{max-width:280px}
   .fakty-lista{grid-template-columns:1fr}
   .fakty-lista div{border-bottom:1px solid var(--linia)}
   .fakty-lista div:last-child{border-bottom:0}
