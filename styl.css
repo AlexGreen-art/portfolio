@@ -83,7 +83,7 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
 .dwie-kolumny p{margin:14px 0 0;color:var(--atrament-jasny);font-size:.97rem}
 .dwie-kolumny>div>p:first-child{margin-top:0}
 .portret{margin:0}
-.portret img{width:100%;max-width:400px;height:auto;aspect-ratio:4/5;object-fit:cover;
+.portret img{width:100%;max-width:320px;height:auto;aspect-ratio:4/5;object-fit:cover;
   object-position:center 22%;border-radius:3px;display:block}
 .blok-ciemny .wstep{color:#a29eae}
 .blok-ciemny p{color:#b5b1bf}
