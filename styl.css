@@ -262,3 +262,8 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
   .hero-siatka{grid-template-columns:1fr}
   .film{width:100%;max-width:420px}
 }
+
+/* sekcja aplikacji */
+.podpis-ai{display:block;margin-top:10px;font-size:.85rem;opacity:.75}
+#aplikacje .praca-foto{cursor:default}
+#aplikacje .praca-foto:hover{border-color:var(--linia)}
