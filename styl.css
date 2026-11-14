@@ -26,7 +26,7 @@ img{display:block;max-width:100%}
 a{color:inherit}
 h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01em}
 :focus-visible{outline:3px solid var(--fiolet);outline-offset:3px}
-[id]{scroll-margin-top:calc(var(--naglowek) + 8px)}
+[id]{scroll-margin-top:var(--naglowek)}
 
 .owijka{width:min(1180px,100% - 44px);margin-inline:auto}
 .waska{width:min(1180px,100% - 44px);margin-inline:auto}
@@ -57,7 +57,8 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
 .tel:hover{background:var(--fiolet)}
 
 /* ---------- bloki ---------- */
-.blok{padding:clamp(50px,5.6vw,78px) 0}
+/* każda sekcja zajmuje co najmniej cały ekran pod belką — następna nie wjeżdża od dołu */
+.blok{padding:clamp(50px,5.6vw,78px) 0;min-height:calc(100vh - var(--naglowek));min-height:calc(100svh - var(--naglowek));display:flex;flex-direction:column;justify-content:center}
 .blok-hero{background:var(--las);color:var(--kosc);
   padding:clamp(34px,3.4vw,50px) 0 clamp(30px,3vw,44px);
 }
@@ -191,8 +192,7 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
 .dane dd{margin:0;font-size:1.04rem}
 .dane a{text-decoration:none;border-bottom:2px solid var(--fiolet-jasny)}
 .drobne{font-size:.85rem;color:var(--atrament-jasny)}
-#kontakt{min-height:calc(100svh - var(--naglowek) - 8px);
-  display:flex;flex-direction:column;justify-content:center}
+
 .dane .drobne{display:block;margin-top:3px;line-height:1.45}
 .dopisek{margin-top:28px;color:var(--atrament-jasny);font-size:.95rem;max-width:66ch}
 
@@ -267,3 +267,20 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
 .podpis-ai{display:block;margin-top:10px;font-size:.85rem;opacity:.75}
 #aplikacje .praca-foto{cursor:default}
 #aplikacje .praca-foto:hover{border-color:var(--linia)}
+
+/* ---------- modernizacja ---------- */
+.lead-2 a{color:inherit;text-decoration:none;border-bottom:2px solid var(--fiolet-jasny)}
+.lead-2 a:hover{color:var(--fiolet-jasny)}
+.zestawienie{margin-top:clamp(22px,2.6vw,36px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,26px)}
+.zestawienie .praca-foto{position:relative}
+.zestawienie .ph{aspect-ratio:16/9}
+.znaczek{position:absolute;left:14px;top:14px;background:var(--atrament);color:var(--papier);
+  font:600 .68rem/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;padding:7px 11px;border-radius:2px}
+.znaczek-po{background:var(--fiolet-jasny);color:#20180a}
+.zestawienie-opis{margin-top:clamp(18px,2.2vw,28px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:var(--rynna);align-items:start}
+.zestawienie-opis .praca-problem{margin-top:0}
+.zestawienie-opis .przyciski{display:flex;flex-wrap:wrap;gap:6px 24px}
+@media(max-width:900px){
+  .zestawienie,.zestawienie-opis{grid-template-columns:1fr}
+}
+#modernizacja .praca-rozw{margin-top:10px}
