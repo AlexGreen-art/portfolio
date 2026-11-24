@@ -284,3 +284,5 @@ h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:-.01
   .zestawienie,.zestawienie-opis{grid-template-columns:1fr}
 }
 #modernizacja .praca-rozw{margin-top:10px}
+
+.naglowek-gry{margin-top:clamp(56px,8vw,110px)}
